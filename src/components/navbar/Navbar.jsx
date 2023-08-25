@@ -36,6 +36,30 @@ const Navbar = () => {
           For Professionals
         </NavLink>
       </li>
+      {/* Visible in Mobile hidden in desktop */}
+      <li className="md:hidden">
+        <Link className="text-gray-400">About Click Motto</Link>
+      </li>
+      <li className="md:hidden">
+        <Link className="text-gray-400">Pricing</Link>
+      </li>
+      <li className="md:hidden">
+        <Link className="text-gray-400">License</Link>
+      </li>
+      <li className="md:hidden">
+        <Link className="text-gray-400">Partnership</Link>
+      </li>
+      <li className="md:hidden">
+        <Link className="text-gray-400">Blog</Link>
+      </li>
+      <li className="md:hidden">
+        <Link className="text-gray-400">Help</Link>
+      </li>
+      <li className="md:hidden">
+        <Link className="text-gray-400">Join The Team</Link>
+      </li>
+      {/* ======================= */}
+
       <li>
         <SubMenu></SubMenu>
       </li>
@@ -86,7 +110,7 @@ const Navbar = () => {
               </Link>
             </div>
             <div>
-              <ul className="md:flex items-center hidden space-x-10">
+              <ul className="md:flex items-center hidden space-x-6">
                 {/* NAVBAR ITEM LIST HERE */}
                 {navItem}
               </ul>
@@ -100,7 +124,7 @@ const Navbar = () => {
                 </div>
                 <div>
                   <ul
-                    className={`absolute top-[72px] shadow  w-2/3  px-5 py-5 text-center space-y-5  h-screen transition-all duration-300 bg-white z-50 ${
+                    className={`absolute top-[72px] shadow  w-2/3  px-5 py-5 text-center space-y-2  h-screen transition-all duration-300 bg-white z-50 ${
                       isOpen ? "left-0" : "-left-[527px]"
                     }`}
                   >
