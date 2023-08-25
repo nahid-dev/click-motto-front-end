@@ -58,6 +58,9 @@ const AllPicture = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          {loading && (
+            <span className="loading loading-spinner loading-lg"></span>
+          )}
           {data?.map((item, index) => (
             <div key={index}>
               <img className="w-full" src={item.src.medium} alt="" />

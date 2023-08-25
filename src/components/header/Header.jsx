@@ -4,6 +4,9 @@ import { GoSearch } from "react-icons/go";
 
 const Header = () => {
   const [backgroundImage, setBackgroundImage] = useState("");
+  const [value, setValue] = useState("");
+  console.log(value);
+  // console.log(setQuery);
   //   console.log(backgroundImage);
 
   useEffect(() => {
@@ -52,8 +55,10 @@ const Header = () => {
               </h1>
               <div className="flex items-center">
                 <input
+                  placeholder="Search Photos and Videos"
                   className="w-full border-0 p-2 px-5 rounded-s-full focus-visible:outline-none"
                   type="text"
+                  onChange={(e) => setValue(e.target.value)}
                 />
                 <button className="bg-white border-0 p-2 px-5 rounded-e-full ">
                   <GoSearch size={24}></GoSearch>
