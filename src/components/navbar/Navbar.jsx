@@ -96,10 +96,10 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="shadow py-3 fixed top-0 z-50 bg-white w-full">
+    <div className="shadow py-3 z-50 bg-white w-full">
       <ContainerOne>
         {/* NAVBAR START */}
-        <nav className="">
+        <nav>
           <div className="flex items-center justify-between">
             <div>
               <Link to="/" className="flex items-center primary-color">
